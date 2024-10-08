@@ -362,7 +362,7 @@ import axios from "axios";
 export default function ImagePage() {
   const [prompt, setPrompt] = useState("");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [generatedImage, setGeneratedImage] = useState(null);
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
   // Token for authentication (replace with actual token or fetch it securely)
