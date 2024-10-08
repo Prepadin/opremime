@@ -388,7 +388,7 @@ export default function ImagePage() {
   
     try {
       setLoading(true);
-      const response = await axios.post(`https://6b15-46-122-102-58.ngrok-free.app/generate_design/?prompt=${prompt}`, formData, {
+      const response = await axios.post(`https://8dc7-46-122-102-58.ngrok-free.app/generate_design/?prompt=${prompt}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           "Authorization": `Bearer ${AUTH_TOKEN}`,  // Add the token to the Authorization header
